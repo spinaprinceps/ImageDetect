@@ -7,7 +7,7 @@ require('dotenv').config(); // For environment variables (.env)
 
 // Create an Express app
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Enable CORS (Cross-Origin Resource Sharing) to allow frontend (React) to communicate
 app.use(cors());
